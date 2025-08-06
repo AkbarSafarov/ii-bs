@@ -914,7 +914,12 @@ img, textarea, input, table {
             }
 
             .btns {
-                display: none;
+                gap: 16px;
+                
+                .btn_button {
+                    width: 144px;
+                    padding: 13px 16px;
+                }
             }
         }
     }
