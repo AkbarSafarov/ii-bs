@@ -1,3 +1,21 @@
+$(function() {
+
+    const tmenu = $('.header'),
+        tmenuOffset = tmenu.find('.header_top').offset();
+
+    if (($(window).scrollTop() > tmenuOffset.top)) {
+        tmenu.addClass('fixed_block');
+    };
+
+    $(window).scroll(function() {
+        if (($(window).scrollTop() > tmenuOffset.top)) {
+            tmenu.addClass('fixed_block');
+        } else {
+            tmenu.removeClass('fixed_block');
+        };
+    });
+});
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const body = document.body;
